@@ -21,6 +21,7 @@ def test_sum_of_the_parts_should_be_equal_to_value(
 
     assert sum(goals) == value
 
+
 @pytest.mark.parametrize(
     "value,number_of_parts",
     [
@@ -40,6 +41,7 @@ def test_should_split_into_equal_parts_when_value_divisible_by_parts(
 
     assert len(goals) == number_of_parts
 
+
 @pytest.mark.parametrize(
     "value,number_of_parts",
     [
@@ -58,6 +60,7 @@ def test_parts_should_be_sorted_when_they_are_not_equal(
     goals = split_integer(value, number_of_parts)
 
     assert goals == sorted(goals)
+
 
 @pytest.mark.parametrize(
     "value,number_of_parts",
